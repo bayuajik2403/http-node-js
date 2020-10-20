@@ -16,6 +16,8 @@ if (request.method === 'GET' && request.url === '/posts') {
         httpsREs.on('data',data=>{
             httpsREs.setEncoding('utf-8');
             console.log(data);
+
+            response.write(data);
             
         });
 
@@ -25,6 +27,9 @@ if (request.method === 'GET' && request.url === '/posts') {
     });
     });
 
+} else {
+    response.writeHead(404,{'Content-Type':'text/plain'});
+    response.end('404 Error, url error');
 }
 
 }).listen(8081);
