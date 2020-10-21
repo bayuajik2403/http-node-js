@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = 8081
 
-app.use('/cap', express.static(__dirname + '/public/'))
+app.use('/css', express.static(__dirname + '/public/'))
 
 app.use((req,res,next)=>{
     console.log('MIDDLEWARE')
@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/cap/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 <body>
