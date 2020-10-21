@@ -15,7 +15,7 @@ app.use((req,res,next)=>{
 })
 
 app.post('/post',(req,res)=>{
-    console.log(`its working ${req.bodys`)
+    console.log(`its working ${req.body.email} ${req.body.password}`)
 })
 
 //app.get('/', (req, res) => res.send('Hello World!'))
