@@ -1,0 +1,23 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "example app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bayuajik2403/http-node-js.git"
+  },
+  "author": "Bayu Aji Kurniawan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bayuajik2403/http-node-js/issues"
+  },
+  "homepage": "https://github.com/bayuajik2403/http-node-js#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "express": "^4.17.1"
+  }
+}
