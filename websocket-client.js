@@ -10,3 +10,4 @@ document.forms[0].onsubmit=()=>{
 
     WS.send(input.value);
 };
+//test
